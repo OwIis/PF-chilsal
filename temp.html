@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Swiepr 1</title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/wwa9/css/common.css">
+		<style type="text/css">
+			.layer-popup {
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 100;
+                }
+
+                .layer-popup.show {
+                display: block;
+                }
+
+                .modal-dialog {
+                width: 300px;
+                margin: 40px auto;
+                background-color: #fff;
+                }
+
+                .modal-content {
+                padding:10px 15px;
+                text-align: center;
+                line-height: 100px;
+                }
+
+
+                .padding1{
+                    padding: 25px;
+                }
+                .padding2{
+                    padding: 5%;
+                }
+		</style>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<!-- jq cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+			window.onload = function () {
+
+                $.noConflict();
+                
+                // 팝업 열기
+                $(document).on("click", ".btn-open", function (e){
+                    var target = $(this).attr("href");
+                    console.log(this)
+                    $(target).addClass("show");
+                });
+
+                // 외부영역 클릭 시 팝업 닫기
+                $(document).mouseup(function (e){
+                    var LayerPopup = $(".layer-popup");
+                    if(LayerPopup.has(e.target).length === 0){
+                        console.log(e.target);
+                        LayerPopup.removeClass("show");
+                    }
+                });
+			}
+		</script>
+	</head>
+	<body>
+        <div><p class="padding1">패딩예시보려고합니다</p></div>
+        <div><p class="padding2">패딩 퍼센트 안됩니까</p></div>
+
+        <a href="#layer-popup" class="btn-open">팝업 열기</a>
+
+        <div class="container">
+        <div class="layer-popup show" id="layer-popup">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                팝업 내용입니다.
+            </div>
+            </div>
+        </div>
+        </div>
+	</body>
+</html>

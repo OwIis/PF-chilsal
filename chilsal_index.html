@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>칠성살롱</title>
+        
+        <!-- fontawsome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- 구글폰트적용 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cute+Font&family=Jua&display=swap" rel="stylesheet">
+        <!-- SWIPER CSS CDN -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        
+        <link rel="stylesheet" href="css/chilsal-index.css">
+
+        <!-- SWIPER JS CDN -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- jq cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="js/chilsal-index.js"></script>
+    </head>
+    <body>
+
+        <!-- 참고사이트
+            https://chilsung-salon.com/layout/subpage/archive_perfume.html -->
+
+         <!--- 버거 클릭시 뜨는 카탈로그 --->
+         <div class="side-ctlg">
+            <div class="bck-bgrcolor">  
+            </div>
+            <div>
+                <div class="x"><i class="fa-solid fa-x"></i></div>
+                <p>로그인</p>
+                <p>장바구니</p>
+                <p>위시리스트</p>
+                <p>주문조회</p>
+                <p>마이페이지</p>
+                <div class="product"></div>
+                <p>최근상품</p>
+            </div>
+        </div>
+
+        <header class="clearfix">
+            <div class="fixedtitle clearfix">
+                <div id="title">
+                    <img src="img/logo_trasprt.png" alt="logo. 칠성살롱 chilsung salon"></div>
+                <nav>
+                    <div class="main-nav clearfix">
+                        <div class="clearfix">
+                            <div class="brand" data-order="0">
+                                <p>BRAND</p>
+                            </div>
+                            <div class="shop" data-order="1">
+                                <p>SHOP</p>
+                            </div>
+                            <div class="newissue" data-order="2">
+                                <p>NEW ISSUE</p>
+                            </div>
+                            <div class="contents" data-order="3">
+                                <p>CONTENTS</p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <i class="fa-solid fa-magnifying-glass" id="openSearchIcon"></i>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="fa-solid fa-bars" id="sidectlg"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- <div class="header-sticky"></div> -->
+        </header>
+        <div class="header-title">
+            <img src="img/sns_logo.jpg" alt="chilsung & nevaeh"><div>
+                <p>EAU DE CHILSUNG
+                <br>et Salon de Nevaeh</p>
+            </div>
+        </div>
+         <!---nav호버시 뜨는 메뉴들--->
+         <div class="catalog">
+            <div class="ctlg-1">
+                <div class="clearfix">
+                    <p>칠성사이다</p>
+                    <p>밀키스</p>
+                    <p>델몬트</p>
+                    <p>크니뿌니</p>
+                </div>
+                <div class="clearfix">
+                    <p>오드칠성</p>
+                    <p>에비앙</p>
+                    <p>클라우드</p>
+                </div>
+            </div>
+            <div class="ctlg-2">
+                <div class="clearfix">
+                    <div class="clearfix">
+                        <p>칠성사이다</p>
+                        <li>- 70주년 굿즈</li>
+                        <li>- 캔디&젤리 세트</li>
+                    </div>
+                    <div class="clearfix">
+                        <p>밀키스</p>
+                        <li>- 마크곤잘레스</li>
+                    </div>
+                    <div class="clearfix">
+                        <p>델몬트</p>
+                        <li>- 델몬트 미니병<br> 패키지</li>
+                    </div>
+                    <div class="clearfix">
+                        <p>크니뿌니</p>
+                        <li>- 에비앙X꾸까X발트글라스</li>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <p>오드칠성</p>
+                    <p>에비앙</p>
+                    <p>클라우드</p>
+                </div>
+            </div>
+            <div class="ctlg-3"></div>
+            <div class="ctlg-4">
+                <div>
+                    <p>주문이요</p>
+                    <p>소셜 컨텐츠</p>
+                </div>
+            </div>
+        </div>
+        <!-------------------- 메인 --------------------->
+        <div class="wrap">
+            <div class="main-pic"></div>
+            <!--back img 삽입-->
+            <div id ="main-conts" class="contain1230">
+                <div class="conts-title">
+                    <p>Eau De Chilsung et Salon de Nevaeh</p>
+                    <p>오드칠성 바이 살롱드느바에</p>
+                </div>
+                <div>
+                    <p>칠성의 70여년 간 발자취를 담은 ‘오드 칠성’이 니치 퍼퓸 브랜드인 ‘살롱 드 느바에’와 만나 '오드칠성 바이 살롱드느바에'를 출시합니다.</p>
+                    <p>향수를 통해 한국적인 아름다움의 정수로 최상의 가치를 전달하는 '오드칠성 바이 살롱드느바에'의 특별한 향취를 경험해보세요.</p>
+                </div>
+                <p>롯데백화점 잠실 에비뉴엘 팝업 매장에서 직접 시향 가능</p>
+                <div class="nevaehpics">
+                    <img src="img/nevaehpic1.jpg" alt="pic1"><img src="img/nevaehpic2.jpg" alt="pic1"><img src="img/nevaehpic3.jpg" alt="pic1"></div>
+                <div class="nevaehconts clearfix">
+                    <div>
+                        <img src="img/moment1.jpg" alt=""><p>
+                            당신의 ‘돌아가고 싶은 순간’은 언제인가요?</p>
+                        <p>살롱 드 느바에의 마스터 퍼퓨머가 만들어낸 ‘오드 칠성 바이 살롱드느바에’ 만의
+                            하이엔드 향취는 향기로부터 피어 오르는 기억은 행복한 순간으로의 연결고리가
+                            되어 향기가 지속되는 시간 동안 가슴 따뜻해지는 경험을 제공할 것입니다.</p>
+                    </div>
+                    <div>
+                        <p>Eau De Chilsung ‘The Moment’<br>‘돌아가고 싶은 순간’</p>
+                        <p>
+                            향을 통한 기분 전환을 시작(Top)으로 ‘돌아가고 싶은 moment’를 떠올릴 수 있도록
+                            자극(middle)하고, 오드 칠성을 통해 행복의 감정으로 이어지는 경험(Base)을
+                            제공한다. 칠성사이다, 클라우드, 트레비와 함께했던 기억하고 싶은 순간을 떠올릴 수
+                            있는 향을 담은 니치향수로 브랜딩하였다.
+                        </p>
+                        <img src="img/moment2.png" alt=""></div>
+                </div>
+            </div>
+            <div class="nevaehconts2"> <!--back img tristesse 넣기-->
+                <p class="conts-title">Eau De Chilsung DESIGN</p>
+                <p class="conts-title">- Contrast -</p>
+                <p>필수재인 의식주로 음료의 scene에 들어가 있는 브랜드가 사치품의 영역인 Fragrance의 scene에서<br>
+                    ‘행복’이라는 동일한 가치를 전달하고자 는 모습에서 오는 대비감을 디자인에서 보여주고자 하였습니다.<br>
+                    현실의 무거운 짐을 벗어내고 행복한 기억가는 관문을 무겁고 Bold한 CAP의 장식으로,<br>
+                    추억으로 이끄는 직접적인 매개체인 ‘水(EAU)’는 유려하게 빛나는 글라스 바틀안에 담음으로써 소재에서<br>
+                    오는 대비감을 극대화 합니다.</p>
+            </div>
+            <div class="nevaehconts3 clearfix"> <!--backgroudn  fixed넣기-->
+                <div>
+                    <div id="lemon" class="clearfix">
+                        <img src="img/product1.jpg" alt="lemon"><div>
+                            <p class="conts-title">Cidre 1950 50ml</p>
+                            <p>5종의 풍부한 시트러스와 깊고 볼드한 베티버를 중심으로 잔잔하게 퍼지는 우아한 작약의 향취를 느낄 수 있습니다</p>
+                            <div class="ingrent">
+                                <p>TOP</p>
+                                <p>Lime, Bergamot, Pine, Bitter Orange, Lemon</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>MIDDLE</p>
+                                <p>Lime, Bergamot, Pine, Bitter Orange, Lemon</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>BASE</p>
+                                <p>Lime, Bergamot, Pine, Bitter Orange, Lemon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="whtflw" class="clearfix">
+                        <div>
+                            <p class="conts-title">Le Saphir 50ml</p>
+                            <p>스파클링한 라임이 청아한 은방울꽃과 만나 신선한 연두빛의 아카시아잎과 함께 푸르고 깨끗한 향취를 느낄 수 있습니다.</p>
+                            <div class="ingrent">
+                                <p>TOP</p>
+                                <p>Lime, Bergamot, Muguet, Mint</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>MIDDLE</p>
+                                <p>Acacia Leaf, Green Rose, Narcissus, Herb</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>BASE</p>
+                                <p>Amber, Musk, Sandalwood</p>
+                            </div>
+                        </div>
+                        <img src="img/product2.jpg" alt="whtflw"></div>
+                    <div id="wood" class="clearfix">
+                        <img src="img/product3.jpg" alt="wood"><div>
+                            <p class="conts-title">Pelrichor 50ml</p>
+                            <p>가볍고 상큼한 라임과 클린한 린넨이 차분한 샌달우드와 만나 깊고 몽환적인 숲의 여운을 이끌어내는 향취를 느낄 수 있습니다.</p>
+                            <div class="ingrent">
+                                <p>TOP</p>
+                                <p>Lime, Bergamot, Sandalwood</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>MIDDLE</p>
+                                <p>Linen, White tea, Aldehyde, Violet</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>BASE</p>
+                                <p>White Cotton, Parchouli, Vetiver, Musk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="charcol" class="clearfix">
+                        <div>
+                            <p class="conts-title">Bitter Mallow 50ml</p>
+                            <p>스모키한 우드가 깊은 숲의 흙내음이 어우러지며 차분하고 드라이한 우디와 부드러운 잔향을 느낄 수 있습니다.</p>
+                            <div class="ingrent">
+                                <p>TOP</p>
+                                <p>Lime, Hop Leaf, Bergamot, Raisin, Smoked Wood</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>MIDDLE</p>
+                                <p>Hop Cone, Galbanum, Dark Caramel, Moss, Mallow</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>BASE</p>
+                                <p>Biscuit, Cacao, Sandalwood, Amber, Musk, Vetiver</p>
+                            </div>
+                        </div>
+                        <img src="img/product4.jpg" alt="charcol"></div>
+                    <div id="pink" class="clearfix">
+                        <img src="img/product5.jpg" alt="pink"><div>
+                            <p class="conts-title">Vintage Coral 50ml</p>
+                            <p>상쾌하지만 무게감 있는 자몽의 차분하고 고급스러운 향에 그린한 무드가 더해지며 알싸한 허브와 패슐리로 마무리되는 향취를 느낄 수 있습니다.</p>
+                            <div class="ingrent">
+                                <p>TOP</p>
+                                <p>Lime, Bergamot, Pine, Bitter Orange, Lemon</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>TOP</p>
+                                <p>Lime, Bergamot, Pine, Bitter Orange, Lemon</p>
+                            </div>
+                            <div class="ingrent">
+                                <p>TOP</p>
+                                <p>Lime, Bergamot, Pine, Bitter Orange, Lemon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="signiture">
+                <p>시그니처</p>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="clearfix">
+                                <p>시드르 1950</p>
+                                <div>
+                                    <img src="img/signtr_prd1.jpg" alt="bottle">
+                                    <p class="bttl-name">시드르 1950 50ML</p>
+                                    <p>칠성사이다의 청량함과 시원함을 구현한 향수</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clearfix">
+                                <p>tlemfm 1950</p>
+                                <div>
+                                    <img src="img/signtr_prd2.jpg" alt="bottle">
+                                    <p class="bttl-name">시드르 1950 50ML</p>
+                                    <p>칠성사이다의 청량함과 시원함을 구현한 향수</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clearfix">
+                                <p>tlemfm 1950</p>
+                                <div>
+                                    <img src="img/signtr_prd3.jpg" alt="bottle">
+                                    <p class="bttl-name">시드르 1950 50ML</p>
+                                    <p>칠성사이다의 청량함과 시원함을 구현한 향수</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clearfix">
+                                <p>tlemfm 1950</p>
+                                <div>
+                                    <img src="img/signtr_prd4.jpg" alt="bottle">
+                                    <p class="bttl-name">시드르 1950 50ML</p>
+                                    <p>칠성사이다의 청량함과 시원함을 구현한 향수</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clearfix">
+                                <p>tlemfm 1950</p>
+                                <div>
+                                    <img src="img/signtr_prd5.jpg" alt="bottle">
+                                    <p class="bttl-name">시드르 1950 50ML</p>
+                                    <p>칠성사이다의 청량함과 시원함을 구현한 향수</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <div>
+                <div class="clearfix">
+                    <p>대표이사: 박윤기</p>
+                    <p>이메일: <a href="#">cs_chilsungsalon@lotte.net</a></p>
+                    <p>고객센터: 02-1522-7031</p>
+                </div>
+                <p>통신판매업신고: 2010-경기광명-0416</p>
+                <p>사업장소소재지 : 서울특별시 서초그 서초대로 70길 15(서초동)</p>
+                <p>롯데칠성음료(주) 사업자등록번호: 214-81-07770</p>
+                <div class="clearfix">
+                    <p>이용약관</p>
+                    <p>개인정보 처리방침</p>
+                    <p>청소년 보호정책</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
