@@ -392,10 +392,16 @@ nav > .main-nav > div:last-child > i{
     /* background-color: antiquewhite; */
 }
 #main-conts > .nevaehpics > img{
-    padding-right: 14px;
+    /* padding-right: 14px; */
+    padding-right: 1%;
+    width: 33%;
+}
+#main-conts > .nevaehpics > img:nth-child(2){
+    height: 27vw;
 }
 #main-conts > .nevaehpics > img:last-child{
     padding-right: 0;
+    height: 27vw;
 }
 
 
@@ -410,44 +416,60 @@ nav > .main-nav > div:last-child > i{
     opacity: 0;
 }
 .nevaehconts > div:first-child{
-    width: 570px;
-    margin-right: 65px;
+    /* width: 570px; */
+    width: 46%;
+    /* margin-right: 65px; */
+    margin-right: 5%;
     
 }
 .nevaehconts > div:first-child > p:nth-child(2){
     font-weight: bold;
-    font-size: 28px;
-    margin-top: 50px;
+    /* font-size: 28px; */
+    font-size: 1.5vw;
+    /* margin-top: 50px; */
+    margin-top: 2.7vw;
     color: #333333;
 }
 .nevaehconts > div:first-child > p:nth-child(3){
     text-align: justify;
-    line-height: 30px;
-    margin: 40px 0 ;
+    /* line-height: 30px; */
+    line-height: 1.6vw;
+    /* margin: 40px 0 ; */
+    margin: 2vw 0;
     color: #333333;
+    font-size: 0.9vw;
 }
 .nevaehconts > div:first-child > img{
     opacity:0;
+    width: 100%;
 }
 
 
 .nevaehconts > div:last-child {
-    width: 590px;
+    /* width: 590px; */
+    width: 49%;
 }
 .nevaehconts > div:last-child > p:first-child {
     font-weight: bold;
-    font-size: 28px;
-    margin-top: 80px;
+    /* font-size: 28px; */
+    font-size: 1.5vw;
+    /* margin-top: 80px; */
+    margin-top: 4vw;
     color: #333333;
 }
 .nevaehconts > div:last-child > p:nth-child(2) {
     text-align: justify;
-    line-height: 30px;
-    margin: 50px 0;
+    /* line-height: 30px; */
+    line-height: 1.6vw;
+    /* margin: 50px 0; */
+    margin: 2.6vw 0;
     color: #333333;
+    font-size: 0.9vw;
 }
 .nevaehconts > div:last-child > img {
-    margin-top: 165px;
+    /* margin-top: 165px; */
+    margin-top: 8.7vw;
+    width: 100%;
 }
 
 
@@ -650,6 +672,9 @@ footer > div > div:nth-child(5) > p{
 }
 
 @media all and (max-width: 1024px){
+    #main-conts {
+        width: 85%;
+    }
     .fixedtitle{
         position: relative;;
     }
@@ -670,7 +695,7 @@ footer > div > div:nth-child(5) > p{
     }
     nav > .main-nav > div:last-child{
         right: -20px;
-        bottom: 30px;
+        bottom: 40px;
     }
     nav > .main-nav > div:first-child > div > p {
         font-size: 1.4vw;
@@ -710,24 +735,25 @@ footer > div > div:nth-child(5) > p{
         width: 30%;
     }
 
-
     .header-title > div{
         font-size: 30px;
     }
     .main-pic{
-        width: 1024px;
+        /* width: 1024px; */
+        width: 100%;
         background-size: cover;
         background-position: center;
     }
-
-    #main-conts > .nevaehpics > img{
-        width: 100%;
+    
+    .nevaehconts > div:last-child > p:first-child, .nevaehconts > div:first-child > p:nth-child(2){
+        font-size: 1.9vw;
     }
-    .nevaehconts > div:first-child > img {
-        margin-top: 165px;
+    .nevaehconts > div:last-child > p:nth-child(2), .nevaehconts > div:first-child > p:nth-child(3){
+        line-height: 1.8vw;
+        font-size: 1.5vw;
     }
-    .nevaehconts > div:last-child > img {
-        margin-bottom: 165px;
+    #main-conts > .nevaehpics > img:nth-child(2), #main-conts > .nevaehpics > img:last-child{
+        height: 35vw;
     }
 
     .nevaehconts3 > div{
@@ -740,6 +766,18 @@ footer > div > div:nth-child(5) > p{
     .nevaehconts3 > div > div >div{
         width: 55%;
         padding: 0 2%;
+    }
+    .nevaehconts3 > div > div > div > p.conts-title{
+        font-size: 3vw;
+    }
+    .nevaehconts3 > div > div > div > p:nth-child(2){
+        font-size: 1.6vw;
+    }
+    .nevaehconts3 > div > div > div > div.ingrent > p:first-child{
+        font-size: 2vw;
+    }
+    .nevaehconts3 > div > div > div > div.ingrent > p:last-child{
+        font-size: 1.5vw;
     }
     #wood{
         padding-top: 100px;
